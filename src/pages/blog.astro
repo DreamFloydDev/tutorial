@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "Blog";
 ---
 
@@ -11,9 +13,11 @@ const pageTitle = "Blog";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
+		<nav>
+			<a href="/">Inicio</a>
+			<a href="/about/">Sobre mi</a>
+			<a href="/blog/">Blog</a>
+		</nav>
 		<h1>{pageTitle}</h1>
         <p>Texto que contiene el primer blog.</p>
         <ul>

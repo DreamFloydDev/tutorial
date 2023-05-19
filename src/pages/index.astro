@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "Inicio";
 ---
 
@@ -11,9 +13,11 @@ const pageTitle = "Inicio";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-		<a href="/blog/">Blog</a>
+		<nav>
+			<a href="/">Inicio</a>
+			<a href="/about/">Sobre mi</a>
+			<a href="/blog/">Blog</a>
+		</nav>
 		<h1>The Astro 2023</h1>
 	</body>
 </html>
