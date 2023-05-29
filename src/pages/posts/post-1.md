@@ -1,14 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi primer post en el blog'
 pubDate: 2022-07-01
 description: 'Este es el primer post de mi nuevo blog Astro.'
-author: 'Astro alumno'
+author: 'DreamFloyd'
 image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'El logotipo de Astro con la palabra One.'
 tags: ["astro", "bloguear", "aprender en público"]
 ---
-# Mi primer post en el blog
 
 Published on: 2023-05-19
 
