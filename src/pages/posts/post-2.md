@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi segundo post en el blog
-author: Astro alumno
+author: DreamFloyd
 description: "Después de aprender un poco de Astro, ¡no podía parar!"
 image: 
     url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
