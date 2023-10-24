@@ -4,6 +4,9 @@ import BlogPost from '../components/BlogPost.astro';
 
 const allPosts = await Astro.glob('../pages/posts/*.md');
 const pageTitle = "Blog";
+
+const res = await fetch("http://www.ahuizote.com/wp-json/wp/v2/posts")
+const posts = await res.json()
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -11,4 +14,15 @@ const pageTitle = "Blog";
 	<ul>
 		{allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
 	</ul>
+	<div class="pt-4">
+		<p class="text-3xl font-bold">Posts from Ahuizote.com</p>
+		{
+			posts.slice(0, 2).map((post) => (
+				<div class="pt-4">
+					<h2 class="text-lg font-bold" set:html={post.title.rendered} />
+					<p set:html={post.content.rendered} />
+				</div>
+			))
+		  }
+	</div>
 </BaseLayout>
